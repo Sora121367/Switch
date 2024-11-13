@@ -1,12 +1,19 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './component/HomePage';
+import Narbar from './component/Narbar';
 
-import './App.css'
-
-export default function App() {
+function App() {
   return (
-    <h1 className="text-3xl font-bold text-red-500">
-      Hello world! Here is My website.
-    </h1>
-  )
+    // <BrowserRouter>
+    //   <Narbar />
+    //   {/* <Routes>
+    //     <Route path='/' element={<HomePage />} />
+    //   </Routes> */}
+    // </BrowserRouter>
+    <>
+    <Narbar/>
+    </>
+  );
 }
 
-
+export default App;
