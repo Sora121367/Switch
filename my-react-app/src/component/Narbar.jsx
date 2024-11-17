@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const Navbar = () => {
   return (
@@ -7,7 +7,9 @@ export const Navbar = () => {
         <img src="src/assets/logo.png" alt="Company logo" className="h-6" />
         <div className="flex space-x-8 ">
           <button className="text-white">Login</button>
-          <button className="text-black bg-white px-4 py-2 rounded">Start for free</button>
+          <button className="text-black bg-white px-4 py-2 rounded">
+            Start for free
+          </button>
         </div>
       </nav>
     </header>

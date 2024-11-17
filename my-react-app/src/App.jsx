@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomePage from './component/HomePage';
-import Narbar from './component/Narbar';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./component/HomePage";
+import Narbar from "./component/Narbar";
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
     //   </Routes> */}
     // </BrowserRouter>
     <>
-    <Narbar/>
+      <Narbar />
+      <HomePage />
     </>
   );
 }
