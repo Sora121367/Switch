@@ -2,7 +2,7 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <header className="bg-[#162623] w-full h-14 flex items-center">
+    <header className="bg-[#162623]  w-full h-14 flex items-center ">
       <nav className="flex justify-between items-center w-full px-4 mr-12 ml-12">
         <img src="src/assets/logo.png" alt="Company logo" className="h-6" />
         <div className="flex space-x-8 ">
