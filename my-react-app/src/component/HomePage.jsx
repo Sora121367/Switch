@@ -1,51 +1,45 @@
 import React from "react";
+import bannerImage from "../assets/banner.png";
+import CategoryCard from "./CategoryCard";
+
 
 const HomePage = () => {
   return (
-    <main className="relative w-full h-screen">
-      {/* Banner Image */}
-      <img
-        src="src/assets/banner.png"
-        alt="banner"
-        className="opacity-80 w-full rounded-b-lg object-cover h-[200px] sm:h-64 md:h-80 lg:h-auto"
-      />
+    <div className="relative w-full ">
 
-      {/* Text Block */}
-      <div className="absolute z-10 text-center top-14 md:top-20 px-4 w-full">
-        <h1 className="text-xl sm:text-2xl md:text-4xl font-bold text-white mb-4">
-          Explore a World of Unique Shops and Products Tailored Just for You!
-        </h1>
-        <button
-          className="px-6 py-3 text-white bg-blue-500 rounded-md hover:bg-blue-700 transition-all sm:h"
-          aria-label="Get started for free"
-        >
-          Get started for free
-        </button>
-      </div>
 
-      <div className=" w-[500px] h-[330px] p-14 ">
-        <h1 className="text-4xl font-bold text-[#1E1E1E] ">
-          Plan started at $0
-        </h1>
+      <div className="relative w-full">
+        <img
+          src={bannerImage}
+          alt="Homepage banner"
+          className="w-full  object-cover"
+        />
 
-        <p className="text-gray-600 leading-relaxed mt-4">
-          You read that right. We’re not just talking about a free trial. We
-          want to empower anyone to open an online store and make money doing
-          what they love.
-          <br />
-          <br />
-          Get started with a free online store and upgrade as you grow, or
-          choose from one of our affordable premium plans now.
-        </p>
-      </div>
-
-      <div>
-        <h1 className="text-[40px] font-bold px-14">Shop by category </h1>
-        <div>
-          <img src="" alt="" />
+        {/* Text and Button on Banner */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-white font-bold text-xl sm:text-3xl lg:text-4xl  leading-tight">
+            Explore a World of Unique Shops and <br />Products Tailored Just for You!
+          </h1>
+          <button
+            className="mt-3 p-3 text-white bg-[#0B5754] rounded-md text-sm sm:text-md lg:text-xl lg:mt-16  hover:bg-blue-700 transition-all duration-300"
+            aria-label="Get started for free"
+          >
+            Get started for free
+          </button>
         </div>
       </div>
-    </main>
+
+    {/* Feature and catategqries */}
+
+    <div className="mt-20 px-20 py-4 bg-red-300 w-full h-[100vh]">
+      <h1 className="text-2xl font-bold">Feature and catategqries </h1>
+     
+      <div>
+      <CategoryCard/>
+      </div>
+    </div>
+
+    </div>
   );
 };
 
