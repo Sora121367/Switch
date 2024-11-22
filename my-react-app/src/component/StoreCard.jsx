@@ -5,7 +5,7 @@ import { PiTelegramLogo } from "react-icons/pi";
 
 const StoreCard = () => {
   return (
-    <div className="w-[560px] h-[370px] bg-white rounded-[60px] overflow-hidden p-6 flex items-center justify-between shadow-lg gap-x-8">
+    <div className="w-[525px] h-[370px] bg-white rounded-[60px] overflow-hidden p-6 flex items-center justify-between shadow-lg gap-x-8">
       {/* Left Section: Store Image and Shop Now Button */}
       <div className="flex flex-col items-center space-y-4">
         <img src="src/assets/image2.png" className="w-[210px] object-cover" />
