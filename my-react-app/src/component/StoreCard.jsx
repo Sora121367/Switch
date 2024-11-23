@@ -5,21 +5,21 @@ import { PiTelegramLogo } from "react-icons/pi";
 
 const StoreCard = () => {
   return (
-    <div className="w-[525px] h-[370px] bg-white rounded-[60px] overflow-hidden p-6 flex items-center justify-between shadow-lg gap-x-8">
+    <div className="w-[525px] h-[370px] max-sm:w-[425px] max-sm:h-[350px] bg-white rounded-[60px] overflow-hidden p-6 flex items-center justify-between shadow-lg gap-x-8">
       {/* Left Section: Store Image and Shop Now Button */}
       <div className="flex flex-col items-center space-y-4">
-        <img src="src/assets/image2.png" className="w-[210px] object-cover" />
-        <button className="w-[210px] px-4 py-2 bg-black text-white rounded-md hover:bg-[#084944] transition-all">
+        <img src="src/assets/image2.png" className="w-[210px] max-sm:w-[180px] object-cover" />
+        <button className="w-[210px] max-sm:w-[160px] max-sm:py-1 px-4 py-2 bg-black text-white rounded-md hover:bg-[#084944] transition-all">
           Shop Now
         </button>
       </div>
 
       {/* Right Section: Store Details */}
       <div className="flex-1">
-        <h1 className="text-2xl font-bold text-[#333] mb-4">CLOTHES STORE</h1>
+        <h1 className="text-2xl font-bold text-[#333] mb-4 max-sm:text-xl">CLOTHES STORE</h1>
 
         {/* Categories */}
-        <div className="mt-6 space-y-4">
+        <div className="mt-6 space-y-4 relative max-sm:right-3">
           <div className="flex items-center space-x-4 relative left-20">
             <button className="w-[136px] h-[30px] bg-[#162623] text-white py-1 rounded-full text-sm text-left pl-4">
               Streetwear
@@ -27,10 +27,10 @@ const StoreCard = () => {
             <img
               src="src/assets/image3.png"
               alt="Streetwear"
-              className="w-[24px] object-cover rounded-full absolute right-[135px]"
+              className="w-[24px] object-cover rounded-full absolute right-[101px]"
             />
           </div>
-          <div className="flex items-center space-x-4 relative">
+          <div className="flex items-center space-x-4 relative ">
             <button className="w-[136px] h-[30px] bg-[#162623] text-white py-1 rounded-full text-sm text-left pl-[90px]">
               KDMV
             </button>
@@ -40,14 +40,14 @@ const StoreCard = () => {
               className="w-[24px] object-cover rounded-full absolute -left-[14px]"
             />
           </div>
-          <div className="flex items-center space-x-4 relative left-20">
+          <div className="flex items-center space-x-4 relative left-20 ">
             <button className="w-[136px] h-[30px] bg-[#162623] text-white py-1 rounded-full text-[12px] text-left pl-4">
             The north face
             </button>
             <img
               src="src/assets/image3.png"
               alt="Streetwear"
-              className="w-[24px] object-cover rounded-full absolute right-[135px]"
+              className="w-[24px] object-cover rounded-full absolute right-[101px]"
             />
           </div>
         </div>
@@ -63,7 +63,7 @@ const StoreCard = () => {
         <hr className="my-4 border-t-2 w-[230px] border-gray-200" />
 
         {/* Links */}
-        <div className="flex space-x-6 text-3xl text-[#0B5754] ml-10">
+        <div className="flex space-x-6 text-3xl text-[#0B5754] ml-10 max-sm:text-2xl">
           <a href="#" className="">
           
           <FaSquareInstagram />

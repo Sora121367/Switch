@@ -3,7 +3,7 @@ import React from "react";
 const BannerCard = () => {
   return (
     <div
-      className="w-[530px] h-[172px] flex items-center justify-between px-3
+      className="w-[530px] h-[172px] max-sm:w-[425px]  max-sm:h-[160px] flex items-center justify-between px-3
      rounded-[60px] border-[2px] border-black bg-white "
     >
       {/* Text and Button Section */}
@@ -17,7 +17,7 @@ const BannerCard = () => {
         </div>
 
         {/* Button */}
-        <button className="w-[218px] h-[38px] bg-[#0B5754] text-white rounded-[20px] hover:bg-[#086d68] transition">
+        <button className="w-[218px] h-[38px] max-sm:w-[180px]  bg-[#0B5754] text-white rounded-[20px] hover:bg-[#086d68] transition">
           Learn more
         </button>
       </div>

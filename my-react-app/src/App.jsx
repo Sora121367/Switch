@@ -3,6 +3,8 @@ import HomePage from "./component/HomePage";
 import Narbar from "./component/Narbar";
 import CategoryCard from "./component/CategoryCard";
 
+import SellerHomePage from "./Page/SellerHomePage";
+
 const App = function () {
 	return (
     // <BrowserRouter>
@@ -12,8 +14,10 @@ const App = function () {
     //   </Routes> */}
     // </BrowserRouter>
     <>
-      <Narbar />
-      <HomePage />
+    <SellerHomePage/>
+
+      {/* <Narbar /> */}
+      {/* <HomePage /> */}
       {/* <CategoryCard/> */}
     </>
   );

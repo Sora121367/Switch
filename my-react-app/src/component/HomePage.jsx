@@ -31,16 +31,18 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Features and Categories Section */}
+      
       <div className="mt-20 px-3 py-8 bg-slate-100 w-full">
-        {/* Section Title */}
+        
         <h1 className="text-2xl font-bold text-gray-800 mb-8 text-center">
           Feature Categories
         </h1>
-
-        {/* Card Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative">
-          {/* Cards */}
+         {/* <StoreCard />
+        <BannerCard />
+        <DiscountCard /> */}
+      
+        <div className="grid grid-cols-1  xl:grid-cols-4  gap-6 relative">
+          
           <div className="row-span-2">
             <CategoryCard />
           </div>
