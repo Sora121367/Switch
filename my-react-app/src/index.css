@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .dot {
+    @apply w-2 h-2 bg-white rounded-full;
+  }
+
+  .btn-active {
+    @apply px-4 py-2 rounded-lg text-lg font-medium transition-colors duration-300;
+  }
+  
+}

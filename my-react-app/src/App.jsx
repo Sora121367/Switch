@@ -3,10 +3,13 @@ import HomePage from "./component/HomePage";
 import Narbar from "./component/Narbar";
 import CategoryCard from "./component/CategoryCard";
 
-import SellerHomePage from "./Page/SellerHomePage";
+import SellerPage from "./Page/SellerPage";
+import SellerDashboard from "./Page/SellerDashboard";
+import Messages from "./component/SellerUI/Message";
+import Login from "./component/Login";
 
 const App = function () {
-	return (
+  return (
     // <BrowserRouter>
     //   <Narbar />
     //   {/* <Routes>
@@ -14,11 +17,13 @@ const App = function () {
     //   </Routes> */}
     // </BrowserRouter>
     <>
-    <SellerHomePage/>
-
-      {/* <Narbar /> */}
-      {/* <HomePage /> */}
+       {/* <Narbar />  */}
+       {/* <Login/> */}
+      {/* <HomePage />  */}
       {/* <CategoryCard/> */}
+       {/* <SellerPage/> */}
+      <SellerDashboard />
+      
     </>
   );
 };
