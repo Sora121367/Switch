@@ -13,6 +13,7 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 // import CategoryCard from "./component/CategoryCard";
 
 import SellerPage from "./Page/SellerPage";
+import Customerpage from "./Page/Customerpage.jsx";
 // import SellerDashboard from "./Page/SellerDashboard";
 // import Messages from "./component/SellerUI/Message";
 // import Login from "./component/Login";
@@ -56,7 +57,7 @@ const App = function () {
     },
     {
       path:'/customer',
-      element:<h1>Customer Page</h1>,
+      element:<Customerpage/>,
     }
   ]);
   return (
