@@ -4,8 +4,15 @@ import CategoryCard from "./CategoryCard";
 import StoreCard from "./StoreCard";
 import DiscountCard from "./DiscountCard";
 import BannerCard from "./BannerCard";
+//import useNavigate for click button to go to another pages
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  //create link when button get start go to singup page
+  const navigate = useNavigate();
+  const goTo = () =>{
+    navigate('/signup');
+  }
   return (
     <div className="relative w-full">
       {/* Banner Section */}
@@ -23,6 +30,7 @@ const HomePage = () => {
             Products Tailored Just for You!
           </h1>
           <button
+          onClick={goTo}
             className="mt-3 p-3 text-white bg-[#0B5754] rounded-md text-sm sm:text-md lg:text-xl lg:mt-16 hover:bg-blue-700 transition-all duration-300"
             aria-label="Get started for free"
           >
